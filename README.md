@@ -18,7 +18,7 @@ To demonstrate this, let's return to our coin flipping example. Let's say that y
 
 ## Log Likelihood
 
-When calculating maximum likelihood, we often use a the log likelihood, as taking the logarithm can simplify calculations. For example, taking the logarithm of a set of products allows us to decompose the problem from products into sums. (You may recall from high school mathematics that $x^(a+b) = x^a \bullet x^b$. Similarly, taking the logarithm of both sides of a function allows us to transform products into sums. 
+When calculating maximum likelihood, we often use a the log likelihood, as taking the logarithm can simplify calculations. For example, taking the logarithm of a set of products allows us to decompose the problem from products into sums. You may recall from high school mathematics that $x^{a+b} = x^a \bullet x^b$. Similarly, taking the logarithm of both sides of a function allows us to transform products into sums. 
 
 ## MLE for a Binomial Variable
 
@@ -34,9 +34,9 @@ Taking the log of both sides:
 
 $ln[L(p)] = ln[p^y (1-p)^{n-y}] = y ln(p)+(n-y)ln(1-p)$
 
-If y = 1,2,...,n-1 the derivative of ln[L(p)] with respect ot p is:
+If $y = 1,2,...,n-1$ the derivative of $ln[L(p)]$ with respect to $p$ is:
 
-$\frac{d\,ln[L(p)]}{dp} = y (\frac{1}{p})+(n-y)(\frac{-1}{1-p})$  
+$\frac{\partial ln[L(p)]}{\partial p} = y (\frac{1}{p})+(n-y)(\frac{-1}{1-p})$  
 
 As we have seen previously, the maximum will then occur when the derivative equals zero:  
 
@@ -46,15 +46,15 @@ Distributing, we have
 
 $0 = \frac{y}{p} - \frac{n-y}{1-p}$
 
-And solving for p: 
+And solving for $p$: 
 
-$ \frac{n-y}{1-p} = \frac{y}{p} $
+$$ \frac{n-y}{1-p} = \frac{y}{p} $$
 
-$p(n-y) = \frac{y(1-p)}{p}$  
-$\frac{n-y}{y} = \frac{1-p}{p}$  
-$\frac{n}{y}-1 = \frac{1}{p}-1$  
-$\frac{n}{y} = \frac{1}{p} $  
-$p = \frac{y}{n}$  
+$$p(n-y) = \frac{y(1-p)}{p}$$  
+$$\frac{n-y}{y} = \frac{1-p}{p}$$  
+$$\frac{n}{y}-1 = \frac{1}{p}-1$$  
+$$\frac{n}{y} = \frac{1}{p} $$  
+$$p = \frac{y}{n}$$  
 
 And voila, we have verified the intuitive solution discussed above; the maximum likelihood for a binomial sample is the observed frequency!
  
