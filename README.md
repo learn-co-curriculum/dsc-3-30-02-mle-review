@@ -18,7 +18,7 @@ To demonstrate this, let's return to our coin flipping example. Let's say that y
 
 ## Log Likelihood
 
-When calculating maximum likelihood, we often use a the log likelihood, as taking the logarithm can simplify calculations. For example, taking the logarithm of a set of products allows us to decompose the problem from products into sums. (You may recall from high school mathematics that $x^(a+b) = x^a \bullet x^b$. Similarly, taking the logarithm of both sides of a function allows us to transform products into sums. 
+When calculating maximum likelihood, we often use a the log likelihood, as taking the logarithm can simplify calculations. For example, taking the logarithm of a set of products allows us to decompose the problem from products into sums. (You may recall from high school mathematics that $x^{(a+b)} = x^a \cdot x^b$. Similarly, taking the logarithm of both sides of a function allows us to transform products into sums. 
 
 ## MLE for a Binomial Variable
 
